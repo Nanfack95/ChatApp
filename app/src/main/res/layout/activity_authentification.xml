@@ -10,8 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:alpha="0.4"
-        android:scaleType="centerCrop"/>
-        android:src="@drawable/smart_phone"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/talks"/>
 
 
 <LinearLayout
@@ -29,6 +29,7 @@
         android:src="@drawable/smart_phone"/>
     
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutTextInputEmail"
         android:layout_width="match_parent"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="Email"
@@ -43,6 +44,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutTextInputPassword"
         android:layout_width="match_parent"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="Password"
@@ -60,6 +62,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnConnect"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:gravity="center"
@@ -68,16 +71,10 @@
         app:cornerRadius="4dp"/>
 
 
-
-
-
-
-    
-
-
 </LinearLayout>
 
     <TextView
+        android:id="@+id/tvRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="creer un compte"
