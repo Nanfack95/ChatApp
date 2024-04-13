@@ -53,6 +53,7 @@ class FriendsRecyclerAdapter:RecyclerView.Adapter<FriendsRecyclerAdapter.ViewHol
 
             itemView.setOnClickListener{
                 Intent(itemView.context, ChatActivity::class.java).also {
+                    it.putExtra("friend", friend.name)
                     itemView.context.startActivity(it)
                 }
             }
